@@ -63,3 +63,40 @@
 ##### Not so Good For:
 - Highly transactional systems or where the data model is designed up front.
 - Tightly coupled systems
+
+
+
+```
+function func1(name) {
+  return new Promise((res, rej) => {
+    setTimeout(() => res(name), 300);
+  });
+}
+
+let x = new Promise((res, rej) => {
+    setTimeout(() => res('my promise'), 1000);
+  });
+
+/*
+x.then(res => {
+  console.log(res);
+  return func1('one');
+ }
+)
+.then(r => func1('two'))
+.then(e => console.log(e));
+
+y = Promise.all([x, func1('all')]);
+y.then(r => console.log(r));*/
+
+async function test_async() {
+
+  let y = await x;
+  console.log(y);
+
+  let z = await func1('mehul');
+  console.log(z);
+}
+
+test_async()
+```
