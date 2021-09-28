@@ -1,4 +1,64 @@
-# interview_prep
+## Interview preparation
+
+### System Design
+#### Scalability
+- Horizontal vs Vertical Scalability
+- Increase in No of users
+- Increase in No of requests
+- Increase Traffic
+
+#### Replication
+- Type of replication
+- How to handle Failures ?
+
+#### CAP Theorem
+- Consistency
+  - Weak/Strong Consistency
+  - Eventual Consistency
+  - Higly consistent system?
+- Availability
+  - R/W when nodes goes down?
+  - Tradeoffs?
+  - Highly available system? 
+- Partition Tolerance
+  - Network Failures
+  - Interaction between Partitions  
+- Which two holds and where
+
+#### Microservices
+- Interaction between microservices
+- What services you break?
+
+#### CDN
+- How do we use?
+- Where it is useful ?
+- Highly available systems
+- Advantage
+
+#### Load balancer Reverse Proxy
+- Types of load balancer
+- Difference between these
+
+#### Databases
+- SQL / NoSQL
+- Differences
+- Where to use which one
+- Real life examples
+
+#### Caching
+- Where you implement caching?
+- Eviction strategy
+- Trade Off?
+- Real life cache - Redis/ Memcache 
+
+#### Message Queue
+- Where you can use?
+- RabbitMQ, Kafka
+
+##### References
+- [System design primer](https://github.com/donnemartin/system-design-primer)
+- [Interview Bit](https://www.interviewbit.com/courses/system-design/topics/storage-scalability/)
+
 ### Python
 - basic data types
 - why set vs dict
